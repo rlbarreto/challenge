@@ -4,32 +4,32 @@ Programming challenge at R&amp;B! Good luck.
 
 ## Desafio programação (fase 1)
 
-A ideia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
+A ideia deste desafio é nos permitir avaliar melhor as habilidades de candidatos às vagas de programador, de vários níveis.
 
 Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas.
 
 ## O desafio 
 
-*  Temos um diretório que contem alguns arquivos _.json_, precisamos ter um programa que leia esses
-    arquivos e transforme-os em arquivos XML e envie para um endpoint, esta API por sua vez, irá salvar
+*  Temos um diretório que contém alguns arquivos _.json_, precisamos ter um programa que leia esses
+    arquivos e transforme-os em arquivos XML e envie para um endpoint. Esta API, por sua vez, irá salvar
     em um banco de dados e precisamos exibir os dados cadastrados.
     
 ### PARSER(WORKER)
     
-1. Depois de definido o diretório, o mesmo deve ser monitorado pois podem chegar mais arquivos
+1. Depois de definido o diretório, o mesmo deve ser monitorado, pois podem chegar mais arquivos
       _.json_ a serem processados.
     
-2. O transmissão precisa ser um formato XML mesmo que você transforme dos dois lados para _JSON_.
+2. A transmissão precisa ser em formato XML mesmo que você transforme dos dois lados para _JSON_.
 
 ### WEB
 
 1. Exibir esses dados cadastrados em uma tabela.
     
-2. Permitir filtar, por características, amigos em comum, inimigos em comum e o que mais você julgar necessario.
+2. Permitir filtar, por características: amigos em comum, inimigos em comum e o que mais você julgar necessário.
     
-3. Conseguir mesclar filtros (EX: __Amigos com caracteriscas__) 
+3. Conseguir mesclar filtros (EX: __Amigos com características__) 
 
-4.  O céu é o limite na interface, fique a vontade.
+4.  O céu é o limite na interface, fique à vontade.
 
 #### Plus mas não requerido
     
@@ -39,11 +39,11 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
     
 * 100% Javascript
     
-* Usando Docker pra executar a applicação
+* Usando Docker pra executar a aplicação
 
 ### Considerações Gerais
 
-* Faça um fork deste repositório desenvolva sua _super app_ e ao finalizar nos envie um pull request
+* Faça um fork deste repositório, desenvolva sua _super app_ e, ao finalizar, nos envie um pull request
      
 * As tecnologias você define, pois aqui usamos de tudo um pouco.
 
