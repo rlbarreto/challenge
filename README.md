@@ -1,10 +1,10 @@
 # Challenge R&B
 
-Programming of challenge at R&amp;B! Good luck.
+Programming challenge at R&amp;B! Good luck.
 
 ## Desafio programação (fase 1)
 
-A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
+A ideia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
 
 Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas.
 
@@ -16,15 +16,15 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
     
 ### PARSER(WORKER)
     
-    1. Depois de definido o diretorio, o memso deve ser monitorado pois podem chegar mais arquivos
+    1. Depois de definido o diretorio, o mesmo deve ser monitorado pois podem chegar mais arquivos
       .json a serem processados.
     
-    2. O transmissão precisa ser um formato XML memso que você transforme dos dois lados.
+    2. O transmissão precisa ser um formato XML mesmo que você transforme dos dois lados.
 
 ### WEB
     1. Exibir esses dados cadastrados em uma tabela.
     
-    2. Permitir filtar, por caracteristicas, amigos em comum, inimigos em comum e o que mais você
+    2. Permitir filtar, por características, amigos em comum, inimigos em comum e o que mais você
       julgar necessario.
     
     3. Conseguir mesclar filtros (EX: __Amigos com caracteriscas__) 
@@ -41,7 +41,7 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
 
 ### Considerações Gerais
 
-    * Faça um fork deste repositorio desenvolva sua super app e ao finalizar nos envie um pull
+    * Faça um fork deste repositório desenvolva sua super app e ao finalizar nos envie um pull
       request
      
     * As tecnologias você define, pois aqui usamos de tudo um pouco.
