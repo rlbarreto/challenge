@@ -10,23 +10,22 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
 
 ## O desafio 
 
-*  Temos um diretório que contem alguns arquivos '''.json''', precisamos ter um programa que leia esses
-    arquivos e transforme-os em arquivos XML e envie para um endpoint, esta API por sua vez vai salvar
+*  Temos um diretório que contem alguns arquivos _.json_, precisamos ter um programa que leia esses
+    arquivos e transforme-os em arquivos XML e envie para um endpoint, esta API por sua vez, irá salvar
     em um banco de dados e precisamos exibir os dados cadastrados.
     
 ### PARSER(WORKER)
     
 1. Depois de definido o diretório, o mesmo deve ser monitorado pois podem chegar mais arquivos
-      .json a serem processados.
+      _.json_ a serem processados.
     
-2. O transmissão precisa ser um formato XML mesmo que você transforme dos dois lados.
+2. O transmissão precisa ser um formato XML mesmo que você transforme dos dois lados para _JSON_.
 
 ### WEB
 
 1. Exibir esses dados cadastrados em uma tabela.
     
-2. Permitir filtar, por características, amigos em comum, inimigos em comum e o que mais você
-      julgar necessario.
+2. Permitir filtar, por características, amigos em comum, inimigos em comum e o que mais você julgar necessario.
     
 3. Conseguir mesclar filtros (EX: __Amigos com caracteriscas__) 
 
@@ -44,8 +43,7 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
 
 ### Considerações Gerais
 
-* Faça um fork deste repositório desenvolva sua super app e ao finalizar nos envie um pull
-      request
+* Faça um fork deste repositório desenvolva sua _super app_ e ao finalizar nos envie um pull request
      
 * As tecnologias você define, pois aqui usamos de tudo um pouco.
 
@@ -74,3 +72,5 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
     da solução, a arquitetura, documentação, estilo de código, testes unitários, testes funcionais,
     nível de automação dos testes, o design da interface e a implementação do código.
 
+
+![South park](/files/south-park-header.jpg)
