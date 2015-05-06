@@ -10,13 +10,13 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
 
 ## O desafio 
 
-*  Temos um diretorio que contem alguns arquivos '''.json''', precisamos ter um programa que leia esses
+*  Temos um diretório que contem alguns arquivos '''.json''', precisamos ter um programa que leia esses
     arquivos e transforme-os em arquivos XML e envie para um endpoint, esta API por sua vez vai salvar
     em um banco de dados e precisamos exibir os dados cadastrados.
     
 ### PARSER(WORKER)
     
-1. Depois de definido o diretorio, o mesmo deve ser monitorado pois podem chegar mais arquivos
+1. Depois de definido o diretório, o mesmo deve ser monitorado pois podem chegar mais arquivos
       .json a serem processados.
     
 2. O transmissão precisa ser um formato XML mesmo que você transforme dos dois lados.
@@ -29,6 +29,8 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
       julgar necessario.
     
 3. Conseguir mesclar filtros (EX: __Amigos com caracteriscas__) 
+
+4.  O céu é o limite na interface, fique a vontade.
 
 #### Plus mas não requerido
     
@@ -47,18 +49,16 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
      
 * As tecnologias você define, pois aqui usamos de tudo um pouco.
 
-* Registre tudo: testes que forem executados, ideias que gostaria de implementar se tivesse
+* __Registre tudo__: testes que forem executados, ideias que gostaria de implementar se tivesse
       tempo (explique como você as resolveria, se houvesse tempo), decisões que forem tomadas e
       seus porquês, arquiteturas que forem testadas e os motivos de terem sido modificadas ou
       abandonadas. 
     
-* Crie um arquivo COMMENTS.md ou HISTORY.md no seu fork para registrar essas
-      reflexões e decisões.
+* Crie um arquivo COMMENTS.md ou HISTORY.md no seu fork para registrar essas reflexões e decisões.
     
 * Performance importa (Imagine um Json com 1Gb de dados) 
     
-* Existem arquivos dentro do diretorio files chamados de personagens.zip, pode descomprimir e
-      realizar os testes.
+* Existem arquivos dentro do diretório files chamados de personagens.zip, pode descomprimir e realizar os testes.
     
 * Use ferramentas e bibliotecas open-source, mas documente as decisões e porquês;
     
