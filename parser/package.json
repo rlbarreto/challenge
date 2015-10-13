@@ -1,0 +1,21 @@
+{
+  "name": "parser",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.4.2",
+    "chokidar": "^1.2.0",
+    "js2xml": "^1.0.3",
+    "js2xmlparser": "^1.0.0",
+    "jstoxml": "^0.2.3",
+    "nodexml": "^1.0.2",
+    "path": "^0.12.7"
+  }
+}
