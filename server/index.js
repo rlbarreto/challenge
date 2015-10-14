@@ -72,7 +72,24 @@ routerApi.route('/personagens').post(function salvar(req, res) {
   if (req.query.sexo) {
     options.where.sexo = req.query.sexo;
   }
-
+  if (req.query.atividade) {
+    options.where.atividade = req.query.atividade;
+  }
+  if (req.query.voz) {
+    options.where.voz = req.query.voz;
+  }
+  if (req.query.origem) {
+    options.where.origem = req.query.origem;
+  }
+  if (req.query.olhos) {
+    options.where.olhos = req.query.olhos;
+  }
+  if (req.query.cabelo) {
+    options.where.cabelo = req.query.cabelo;
+  }
+  if (req.query.idade) {
+    options.where.idade = req.query.idade;
+  }
   //options.where = {'relacionado.relacionamento': 'AMIGO'};
 
   PersonagemModel.findAll(options).then(function (personagens) {
