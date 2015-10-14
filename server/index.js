@@ -49,9 +49,19 @@ routerApi.route('/personagens').post(function salvar(req, res) {
 
   let caracteristicaWhere = montarWhereCaracteristica(req.query);
   let relacionadoWhere = montarWhereRelacionado(req.query);
-
+  let relacionadoFiltroTipo = {};
+  if (req.query.amigo) {
+    relacionadoFiltroTipo.where = {tipo: 'AMIGO'};
+  } else if (req.query.inimigo) {
+    relacionadoFiltroTipo.where = {tipo: 'INIMIGO'};
+  } else if (req.query.mae) {
+    relacionadoFiltroTipo.where = {tipo: 'MAE'};
+  } else if (req.query.pai) {
+    relacionadoFiltroTipo.where = {tipo: 'PAI'};
+  }
   let options = {include: [{model: CaracteristicaModel, as : 'caracteristica', where: caracteristicaWhere},
-      {model: PersonagemModel, as: 'relacionado', through: {where: {'tipo': 'AMIGO'}}}],
+      //{model: PersonagemModel, as: 'relacionado', through: {where: {'tipo': 'AMIGO'}}, where: relacionadoWhere.amigo}],
+      {model: PersonagemModel, as: 'relacionado', through: relacionadoFiltroTipo, where: relacionadoWhere}],
     limit: 20,
     offset: req.query.offset,
     where: {}
@@ -88,23 +98,28 @@ function montarWhereCaracteristica(query) {
 }
 
 function montarWhereRelacionado(query) {
-  let relacionadoWhere = {};
-  let relacionamento;
+  let relacionadoWhere = {
+    amigos: undefined,
+    inimigos: undefined,
+    mae: undefined,
+    pai: undefined
+  };
+  let relacionamento = query.amigo || query.inimigo;
   let amigos;
   let inimigos = [];
   let mae, pai;
-  if (query.amigo) {
-    if  (query.amigo instanceof Array) {
+  if (relacionamento) {
+    if  (relacionamento instanceof Array) {
       amigos = {
-        $or: query.amigo.reduce(function (inicial, current) {
-          inicial.push({nome: {$like: '%' + current.nome +'%', tipo: 'AMIGO'}});
+        $or: relacionamento.reduce(function (inicial, current) {
+          inicial.push({nome: {$like: '%' + current.nome +'%'}});
         }, [])
       }
 
     } else {
-      amigos = {nome: '%'+ query.amigo.nome+'%', tipo: 'AMIGO'};
+      amigos = {nome: {$like: '%'+ relacionamento.nome+'%'}};
     }
-    relacionadoWhere= {relacionamento : amigos};
+    relacionadoWhere = amigos;
     return relacionadoWhere;
   }
   return {};
