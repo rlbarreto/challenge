@@ -30,28 +30,13 @@ function enviar(obj) {
 function enviarUm(json, callback) {
   let xml = converter.parseToXML(json);
 
-
-  let bufferLength = Buffer.byteLength(xml);
-  let postRequest = {
-    host: "localhost",
-    path: "/personagens",
-    port: 3000,
-    method: "POST",
-    headers: {
-        'Cookie': "cookie",
-        'Content-Type': 'text/xml',
-        'Content-Length': bufferLength
-    }
-  };
   request.post({
-    url: 'http://localhost:3000/personagens',
+    url: 'http://localhost:3000/api/personagens',
     method: 'POST',
     headers: {
         "content-type": "application/xml",  // <--Very important!!!
     },
     body: xml
   }, callback);
-  /*let req = http.request(postRequest)
-  req.write(xml);
-  req.end();*/
+
 }

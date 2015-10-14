@@ -13,6 +13,8 @@
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "express-xml-bodyparser": "^0.2.2",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
     "pg": "^4.4.2",
     "pg-hstore": "^2.3.2",
     "pg-promise": "^1.11.0",

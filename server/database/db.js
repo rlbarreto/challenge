@@ -2,7 +2,6 @@
 
 const sequelize = require('sequelize');
 
-
 exports = module.exports = {
     host: '',
     username: '',
@@ -24,5 +23,8 @@ exports = module.exports = {
         return this._sequelize;
       }
       throw new Error({msgError: 'Dados incorretos'});
+    },
+    salvarPersonagem: function (personagem) {
+
     }
 };
