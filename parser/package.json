@@ -11,11 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "async": "^1.4.2",
+    "bluebird": "^2.10.2",
     "chokidar": "^1.2.0",
     "js2xml": "^1.0.3",
     "js2xmlparser": "^1.0.0",
     "jstoxml": "^0.2.3",
     "nodexml": "^1.0.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "request": "^2.65.0"
   }
 }
