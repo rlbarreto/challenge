@@ -1,34 +1,5 @@
 'use strict';
 
-/*const pg = require('pgp');
-const Promise = require('bluebird');
-
-let bd = {
-  connectionString: '',
-  getConnection: function () {
-    return new Promise(function (resolve, reject) {
-      if (!connectionString) {
-        return reject({msgError: 'BD não inicializado corretamente. ConnectionString: ' + bd.connectionString})
-      }
-      return resolve(pgp(bd.connectionString));
-    });
-  }
-}
-
-
-module.exports = function (host, database, username, password) {
-  if (!bd.connectionString && (!host || !username || !database)) {
-    thow new Error('não é possível iniciar o BD');
-  } else if (!bd.connectionString) {
-    bd.ConnectionString = 'postgres://' + username + (password ? ':' + password : '') + '@' + localhost + '/' + database;
-  }
-
-  return bd;
-}
-
-module.exports.
-*/
-
 const sequelize = require('sequelize');
 
 

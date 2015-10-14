@@ -42,7 +42,7 @@ const CaracteristicaModel = sequelize.define('caracteristica', {
   tableName: 'caracteristica'
 });
 
-CaracteristicaModel.belongsTo(PersonagemModel);
+PersonagemModel.hasMany(CaracteristicaModel, { as: 'caracteristica'});
 
 /*PersonagemModel.sync({force: true});
 RelacionamentoModel.sync({force:true});
